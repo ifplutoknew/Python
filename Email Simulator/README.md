@@ -3,7 +3,7 @@
 A lightweight Python program that simulates a basic email system — send, receive, read, and delete emails between users.
 
 **Created by:** C.K Baloyi  
-**Date:** 2026-03-24
+**Date:** 2026-03-22
 
 ---
 
