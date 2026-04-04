@@ -5,7 +5,10 @@
 
 import datetime
 
-class Email:    #Represents a single email message with sender, receiver, subject, body, and status.
+
+
+#Represents a single email message with sender, receiver, subject, body, and status.
+class Email:    
     def __init__(self, sender, receiver, subject, body):
         # sender: User object sending the email
         # receiver: User object receiving the email
