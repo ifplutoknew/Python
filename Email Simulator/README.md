@@ -1,4 +1,4 @@
-# 📧 Email Simulator
+#Email Simulator
 
 A lightweight Python program that simulates a basic email system — send, receive, read, and delete emails between users.
 
