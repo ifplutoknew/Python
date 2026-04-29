@@ -1,6 +1,6 @@
 # RPG Character Creator
 
-> ⚠️ **Work in Progress** — This project is still under development.
+>  **Work in Progress** — This project is still under development.
 
 A simple command-line tool for creating RPG characters with visual stat bars.
 
