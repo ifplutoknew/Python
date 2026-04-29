@@ -7,7 +7,7 @@ import re
 # already exists if they want to delete old password file and create a new one or ovewrite existing one
 # 2. Add a condition if user wants to create a new key while a key already exists, that the old key will be deleted
 # 3. There can only be one key at a time
-# 4. write comments in the file
+
 
 
 class PasswordManager:
