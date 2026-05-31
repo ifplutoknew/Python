@@ -1,4 +1,4 @@
-# 🏓 Pong Game
+# Pong Game
 
 A two-player Pong game built with Python's `turtle` graphics module.
 
@@ -13,7 +13,7 @@ A two-player Pong game built with Python's `turtle` graphics module.
 1. Clone or download the project files.
 2. Place your sound files in the following directory (or update the paths in the code):
    ```
-   C:\Users\choic\Desktop\pong-game\sounds\bounce.wav
+   C:pong-game\sounds\bounce.wav
    ```
 3. Run the game:
    ```bash
