@@ -6,7 +6,7 @@ from tkinter import messagebox
 
 class cube(object):
     rows = 20
-    w= 0
+    w= 500
     def __init__(self,start,dirnx=1,dirny=0,color=(255,0,0)):
         self.pos = start
         self.dirnx = 1
@@ -98,7 +98,20 @@ class snake(object):
         pass
 
     def addCube(self):
-        pass
+        tail = self.body[-1] #last segment of the snake's body (the tail)
+        dx, dy = tail.dirnx, tail.dirny #current direction of the tail
+
+        if dx == 1 and dy == 0:   #if the tail is moving right, add a new segment to the left of the tail
+            self.body.append(cube((tail.pos[0]-1, tail.pos[1])))
+        elif dx == -1 and dy == 0:    #if the tail is moving left, add a new segment to the right of the tail
+            self.body.append(cube((tail.pos[0]+1, tail.pos[1])))
+        elif dx == 0 and dy == 1:     #if the tail is moving down, add a new segment above the tail
+            self.body.append(cube((tail.pos[0], tail.pos[1]-1)))
+        elif dx == 0 and dy == -1:    #if the tail is moving up, add a new segment below the tail
+            self.body.append(cube((tail.pos[0], tail.pos[1]+1)))
+        
+        self.body[-1].dirnx = dx  #set the direction of the new segment to be the same as the tail
+        self.body[-1].dirny = dy
 
     def draw(self, surface):
         for i, c in enumerate(self.body):
@@ -119,31 +132,47 @@ def drawGrid(w, rows, surface):
         pygame.draw.line(surface, (255,255,255), (0,y),(w,y)) #draw horizontal lines
 
 def redrawWindow(surface):
-    global rows, width, s
+    global rows, width, s, snack
     surface.fill((0,0,0))         #fill the window with black color
     s.draw(surface)              #draw the snake on the surface
+    snack.draw(surface)          #draw the snack on the surface
     drawGrid(width, rows, surface)         #draw the grid on the surface
     pygame.display.update()   #update the display after drawing everything
 
 def randomSnack(rows, item):
-    pass
+    positions = item.body
+    while True:
+        x = random.randrange(rows)   #generate a random x-coordinate for the snack
+        y = random.randrange(rows)   #generate a random y-coordinate for the snack
+        if len(list(filter(lambda z: z.pos == (x,y), positions))) > 0: #check if the generated position is already occupied by the snake's body
+            continue
+        else:
+            break
+    
+    return (x,y)   #return the generated position for the snack
 
 def message_box(subject, content):
     pass
 
 def main():
-    global width, rows, s
+    global width, rows, s, snack
     width = 500
     rows  = 20
     win = pygame.display.set_mode((width, width)) #create a window of size 500x500
     s = snake((255,0,0), (10,10)) #initial position of the snake
+    snack = cube(randomSnack(rows, s), color=(0,255,0)) #create a snack at a random position green color
     flag = True
     clock = pygame.time.Clock() #clock object to control the speed of the game
 
     while flag:
-        pygame.time.delay(50)   #delay of 50 milliseconds
+        pygame.time.delay(80)   #delay of 80 milliseconds
         clock.tick(10)          #10 frames per second
+        s.move()   #move the snake based on user input
+        if s.body[0].pos == snack.pos:     #if the head of the snake hits the snack
+            s.addCube()                    #add a new segment to the snake's body
+            snack = cube(randomSnack(rows, s), color=(0,255,0)) 
         redrawWindow(win)
+
 
 
 
