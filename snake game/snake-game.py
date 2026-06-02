@@ -178,7 +178,7 @@ def main():
 
     while flag:
         pygame.time.delay(80)   #delay of 80 milliseconds
-        clock.tick(18)          #18 frames per second
+        clock.tick(20)          #20 frames per second
         s.move()   #move the snake based on user input
         if s.body[0].pos == snack.pos:     #if the head of the snake hits the snack
             s.addCube()                    #add a new segment to the snake's body
