@@ -95,7 +95,12 @@ class snake(object):
                         c.move(c.dirnx, c.dirny) #move the segment in its current direction      
 
     def reset(self, pos):
-        pass
+        self.head = cube(pos)        #reset the head of the snake to the initial position
+        self.body = []              #clear the body list
+        self.body.append(self.head)  #add the head back to the body list
+        self.turns = {}             #clear the turns dictionary
+        self.dirnx = 0              #reset the direction of the snake (x-axis)
+        self.dirny = 1              #reset the direction of the snake (y-axis)
 
     def addCube(self):
         tail = self.body[-1] #last segment of the snake's body (the tail)
@@ -152,7 +157,14 @@ def randomSnack(rows, item):
     return (x,y)   #return the generated position for the snack
 
 def message_box(subject, content):
-    pass
+    root = tk.Tk()   #create a Tkinter root window
+    root.attributes("-topmost", True)  #set the window to be always on top
+    root.withdraw()  #hide the root window
+    messagebox.showinfo(subject, content)  #show a message box with the given subject and content
+    try:
+        root.destroy()  #destroy the root window after the message box is closed
+    except:
+        pass
 
 def main():
     global width, rows, s, snack
@@ -166,11 +178,19 @@ def main():
 
     while flag:
         pygame.time.delay(80)   #delay of 80 milliseconds
-        clock.tick(10)          #10 frames per second
+        clock.tick(18)          #18 frames per second
         s.move()   #move the snake based on user input
         if s.body[0].pos == snack.pos:     #if the head of the snake hits the snack
             s.addCube()                    #add a new segment to the snake's body
-            snack = cube(randomSnack(rows, s), color=(0,255,0)) 
+            snack = cube(randomSnack(rows, s), color=(0,255,0))
+        
+        for x in range(len(s.body)):
+            if s.body[x].pos in list(map(lambda z: z.pos, s.body[x+1:])): #check if the head collides with other segments of the body
+                print('Score: ',len(s.body)) #print the score (length of the snake)
+                message_box('Game Over', f'Your score is: {len(s.body)}')
+                s.reset((10,10)) #reset the snake to the initial position
+                break
+
         redrawWindow(win)
 
 
