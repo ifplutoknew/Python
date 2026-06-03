@@ -1,50 +1,128 @@
 # Pong Game
 
-A two-player Pong game built with Python's `turtle` graphics module.
+A classic Pong game built with Python's `turtle` graphics module. Play in **single-player mode against an AI opponent** or **two-player mode on the same keyboard**!
+
+## Features
+
+- **Two game modes**: Single-player vs AI or two-player multiplayer
+- **AI opponent**: Intelligent computer player with adjustable difficulty
+- **Score tracking**: Real-time score display at the top of the screen
+- **Win condition**: First player to reach 10 points wins!
+- **Ball physics**: Ball bounces off walls and paddles with increasing speed
+- **Sound effects**: Audio feedback on paddle and wall collisions
+- **Simple controls**: Easy keyboard controls for smooth gameplay
 
 ## Requirements
 
 - Python 3.x
-- Windows OS (required for sound via `winsound`)
-- Sound files (`.wav`) for bounce effects
+- Windows OS (for sound support)
+- Turtle graphics module (included with Python)
+- Sound file: `sounds/bounce.wav`
 
-## Setup
+## Installation & Setup
 
-1. Clone or download the project files.
-2. Place your sound files in the following directory (or update the paths in the code):
+1. Ensure all files are in the correct directory structure:
    ```
-   C:pong-game\sounds\bounce.wav
+   pong-game/
+   ├── pong-game.py
+   └── sounds/
+       └── bounce.wav
    ```
-3. Run the game:
+
+2. Run the game:
    ```bash
    python pong-game.py
    ```
+
+## Game Mode Selection
+
+When you start the game, you'll see a prompt to select your game mode:
+
+- **Press `1`** for **Single Player** (you vs AI)
+- **Press `2`** for **Two Player** (local multiplayer)
 
 ## Controls
 
 | Player | Move Up | Move Down |
 |--------|---------|-----------|
-| Player A (Left, Green) | `W` | `S` |
-| Player B (Right, Blue) | `↑` Up Arrow | `↓` Down Arrow |
+| **Player A** (Green, Left Paddle) | `W` | `S` |
+| **Player B** (Blue, Right Paddle) | `↑` (Up Arrow) | `↓` (Down Arrow) |
+
+*In single-player mode, the AI automatically controls Player B (blue paddle).*
 
 ## How to Play
 
-- Each player controls a paddle on their side of the screen.
-- The ball bounces off the top and bottom walls.
-- If the ball passes your opponent's paddle, **you score a point**.
-- The current score is displayed at the top of the screen.
-- The game runs indefinitely — play to any score you like!
+1. **Objective**: Keep the ball in play by hitting it with your paddle. The ball bounces off the top and bottom walls automatically.
+2. **Scoring**: Each time your opponent fails to hit the ball and it passes their paddle, you score 1 point.
+3. **Ball Physics**: The ball starts at the center and moves diagonally. Each successful paddle hit increases the ball's speed by 2%.
+4. **Winning**: The **first player to reach 10 points wins** the game. A "Game Over" message displays the winner.
+5. **Replay**: Press `1` or `2` after the game ends to start a new game with fresh scores.
+
+## Single-Player Mode (vs AI)
+
+- **Difficulty**: The AI has ~65% accuracy, making it challenging but beatable
+- **AI Behavior**: The AI only moves when the ball is heading towards it
+- **Strategy**: The AI has slight imperfections—look for patterns to exploit!
+
+## Gameplay Tips
+
+- **React quickly** when the ball approaches your paddle
+- **Position your paddle in the middle** to maximize hit opportunities
+- **The ball accelerates** with each paddle collision, so the game gets faster
+- **In single-player**: Watch the AI's movement patterns—it's beatable!
+- **In two-player**: Communicate and coordinate with your opponent
+
+## Technical Details
+
+- **Game Window**: 800×600 pixels with black background
+- **Ball Speed**: Starts at 0.08 units per frame, increases by 2% (×1.02) on each paddle hit
+- **Paddle Dimensions**: 20 pixels wide, 100 pixels tall
+- **Win Score**: 10 points (editable in code)
+- **AI Accuracy**: 65% (adjustable for difficulty)
+- **Sound**: Uses Windows `winsound` module for audio playback
 
 ## Project Structure
 
 ```
 pong-game/
-├── pong-game.py
+├── pong-game.py          # Main game script
+├── readme.md             # This file
 └── sounds/
-    └── bounce.wav
+    └── bounce.wav        # Bounce sound effect
 ```
 
-## Notes
+## Troubleshooting
 
-- Sound playback uses the `winsound` module, which is **Windows-only**. On macOS or Linux, remove or replace the `winsound.PlaySound(...)` calls.
-- Ball speed is set to `0.08` units per frame. You can increase `ball.dx` and `ball.dy` in the code to make the game faster.
+**Sound not playing?**
+- Ensure `sounds/bounce.wav` exists in the `pong-game/` directory
+- Check that your speakers/audio is enabled on your system
+- The script auto-detects the sound file path, so verify it exists
+
+**Game mode won't start?**
+- Make sure to press `1` or `2` to select a game mode before playing
+- The game will wait for your selection before starting
+
+**Game runs slowly?**
+- Close other applications to free up CPU resources
+- The `turtle` module can be resource-intensive on some systems
+
+**Not working on Mac/Linux?**
+- The `winsound` module is Windows-only
+- Comment out or replace the `winsound.PlaySound()` lines to run on other systems
+
+## Customization
+
+To modify the game, edit these values in `pong-game.py`:
+
+| Setting | Variable | Default | Effect |
+|---------|----------|---------|--------|
+| **Win Score** | `WIN_SCORE` | `10` | Points needed to win |
+| **AI Accuracy** | `random.random() < 0.65` | `0.65` | Change to `0.9` for harder AI, `0.5` for easier |
+| **Ball Speed** | `ball.dx` / `ball.dy` | `0.08` | Increase for faster gameplay |
+| **Speed Increase on Hit** | `ball.dx *= -1.02` | `1.02` | Increase to `1.05` for faster acceleration |
+| **Screen Size** | `wn.setup(width=800, height=600)` | `800x600` | Adjust dimensions |
+| **Colors** | `paddle_a.color()`, `paddle_b.color()` | Green/Blue | Customize paddle colors |
+
+## License
+
+Free to use and modify for personal projects.
