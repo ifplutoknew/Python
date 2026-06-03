@@ -1,49 +1,63 @@
-# RPG Character Creator
+# RPG Character Display
 
->  **Work in Progress** — This project is still under development.
+>  **Active Development** — Displaying animated RPG character stats with visual bars.
 
-A simple command-line tool for creating RPG characters with visual stat bars.
+A Pygame-based RPG character display featuring animated stat visualization with level bars and a live character sprite.
+
+## Features
+
+- **Animated Character Sprite** - Smooth bobbing and arm swing animations
+- **Visual Stat Bars** - Progress bars for all character attributes
+- **Core Stats**:
+  - Strength (STR) - Red bar
+  - Intelligence (INT) - Blue bar
+  - Charisma (CHA) - Magenta bar
+- **Resource Bars**:
+  - Health - Green bar
+  - Mana - Cyan bar
+  - Experience - Orange bar
+- **Real-time Display** - 60 FPS animation
 
 ## Usage
 
-Run the script and follow the prompts:
+Run the script:
 
 ```bash
 python RGP_Character.py
 ```
 
-You will be asked to enter:
-- **Character name**
-- **Strength**
-- **Intelligence**
-- **Charisma**
+The application will display a window showing:
+- **Left side**: Character stats with visual progress bars
+- **Right side**: Animated character sprite with smooth movement
 
-### Example
+### Character Details
 
+The default character "Hero" displays:
+- Level: 5
+- Strength: 15/20
+- Intelligence: 12/20
+- Charisma: 14/20
+- Health: 85/100
+- Mana: 60/75
+- Experience: 65/100
+
+## Customization
+
+Edit the `main()` function to change:
+- Character name
+- Stat values
+- Max values for health, mana, and experience
+- Character color (change the `color` parameter in `draw_character_sprite`)
+
+### Color Customization
+
+Modify the color tuple (R, G, B) in the sprite drawing call:
+```python
+draw_character_sprite(screen, 420, 200, frame, color=(100, 200, 255))  # Blue
 ```
-Enter a character name: Aragorn
-Enter the character strength: 3
-Enter the character intelligence: 2
-Enter the character charisma: 2
-```
 
-**Output:**
-```
-Aragorn
-STR ●●●○○○○○○○
-INT ●●○○○○○○○○
-CHA ●●○○○○○○○○
-```
+## Requirements
 
-## Rules
-
-### Name
-- Must be a string
-- Cannot be empty
-- Maximum 10 characters
-- No spaces allowed
-
-### Stats (Strength, Intelligence, Charisma)
-- Each stat must be an integer between 1 and 4 (inclusive)
-- The three stats must add up to exactly **7 points**
+- Python 3.6+
+- Pygame
 
