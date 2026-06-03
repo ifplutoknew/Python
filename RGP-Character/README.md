@@ -46,3 +46,4 @@ CHA ●●○○○○○○○○
 ### Stats (Strength, Intelligence, Charisma)
 - Each stat must be an integer between 1 and 4 (inclusive)
 - The three stats must add up to exactly **7 points**
+
