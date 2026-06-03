@@ -3,6 +3,7 @@ import random
 import pygame
 import tkinter as tk
 from tkinter import messagebox
+from pygame import mixer
 
 class cube(object):
     rows = 20
@@ -167,10 +168,19 @@ def message_box(subject, content):
         pass
 
 def main():
-    global width, rows, s, snack
+    global width, rows, s, snack, collision_sound
     width = 500
     rows  = 20
     win = pygame.display.set_mode((width, width)) #create a window of size 500x500
+    
+    # Initialize mixer for sound
+    mixer.init()
+    
+    # Load collision sound (replace 'collision.wav' with your sound file path)
+    try:
+        collision_sound = mixer.Sound('collision.wav')
+    except:
+        collision_sound = None
     s = snake((255,0,0), (10,10)) #initial position of the snake
     snack = cube(randomSnack(rows, s), color=(0,255,0)) #create a snack at a random position green color
     flag = True
@@ -186,6 +196,9 @@ def main():
         
         for x in range(len(s.body)):
             if s.body[x].pos in list(map(lambda z: z.pos, s.body[x+1:])): #check if the head collides with other segments of the body
+                # Play collision sound
+                if collision_sound:
+                    collision_sound.play()
                 print('Score: ',len(s.body)) #print the score (length of the snake)
                 message_box('Game Over', f'Your score is: {len(s.body)}')
                 s.reset((10,10)) #reset the snake to the initial position

@@ -20,7 +20,6 @@ def get_next_open_row(board, col):
             return r
     
 
-
 board = create_board()
 game_over = False
 turn = 0
