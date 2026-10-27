@@ -1,0 +1,350 @@
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+1	0.0	0.1
+1	0.0	0.0
+1	0.1	-0.4
+1	0.2	-0.4
+1	0.5	-0.1
+1	0.8	-0.6
+1	1.2	0.0
+1	1.7	0.3
+1	2.2	0.1
+1	2.8	0.3
+1	3.5	-0.1
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+2	0.0	0.2
+2	0.0	0.0
+2	0.1	-0.2
+2	0.2	-0.3
+2	0.5	-0.1
+2	0.8	-0.3
+2	1.2	0.0
+2	1.7	-0.1
+2	2.2	0.0
+2	2.8	0.2
+2	3.5	0.2
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+3	0.0	-0.1
+3	0.0	-0.4
+3	0.1	-0.1
+3	0.2	-0.3
+3	0.5	-0.2
+3	0.8	-0.1
+3	1.2	-0.1
+3	1.7	-0.2
+3	2.2	0.1
+3	2.8	0.0
+3	3.5	0.0
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+4	0.0	-0.1
+4	0.0	-0.1
+4	0.1	-0.3
+4	0.2	-0.4
+4	0.5	-0.2
+4	0.8	0.0
+4	1.2	-0.1
+4	1.7	-0.1
+4	2.2	-0.1
+4	2.8	-0.3
+4	3.5	-0.1
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+5	0.0	0.2
+5	0.0	0.2
+5	0.1	-0.1
+5	0.2	-0.3
+5	0.5	0.0
+5	0.8	0.2
+5	1.2	0.4
+5	1.7	11.4
+5	2.2	32.7
+5	2.8	55.6
+5	3.5	76.6
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+6	0.0	-0.1
+6	0.0	-0.5
+6	0.1	-0.8
+6	0.3	-0.6
+6	0.5	-0.2
+6	0.8	-0.1
+6	1.2	-0.2
+6	1.7	0.0
+6	2.2	-0.3
+6	2.8	15.6
+6	3.5	43.8
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+7	0.0	0.2
+7	0.0	0.1
+7	0.1	0.2
+7	0.2	0.0
+7	0.5	0.1
+7	0.8	0.2
+7	1.2	0.6
+7	1.7	0.2
+7	2.2	0.1
+7	2.8	1.6
+7	3.5	27.7
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+8	0.0	0.0
+8	0.0	-0.1
+8	0.1	-0.0
+8	0.2	-0.1
+8	0.5	-0.1
+8	0.8	-0.1
+8	1.2	0.0
+8	1.7	0.1
+8	2.2	1.4
+8	2.8	11.6
+8	3.5	22.0
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+9	0.0	0.1
+9	0.0	0.1
+9	0.1	0.2
+9	0.2	0.0
+9	0.5	0.0
+9	0.8	0.4
+9	1.2	0.2
+9	1.7	0.4
+9	2.2	15.8
+9	2.8	42.6
+9	3.5	68.5
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+10	0.0	-0.2
+10	0.0	-0.2
+10	0.1	-0.6
+10	0.2	-0.6
+10	0.5	-0.5
+10	0.8	0.0
+10	1.2	0.2
+10	1.7	-0.3
+10	2.2	13.3
+10	2.8	39.4
+10	3.5	63.5
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+11	0.0	0.0
+11	0.0	0.0
+11	0.1	-0.3
+11	0.3	-0.6
+11	0.5	0.1
+11	0.8	0.1
+11	1.2	0.2
+11	1.7	0.8
+11	2.2	21.0
+11	2.8	47.9
+11	3.5	72.9
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+12	0.0	0.0
+12	0.0	-0.1
+12	0.1	-0.1
+12	0.2	-0.1
+12	0.5	-0.5
+12	0.8	0.3
+12	1.2	0.5
+12	1.7	0.3
+12	2.2	0.1
+12	2.8	0.0
+12	3.5	-0.1
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+13	0.0	0.0
+13	0.0	-0.3
+13	0.1	0.0
+13	0.2	-0.3
+13	0.5	-0.1
+13	0.8	0.0
+13	1.2	0.4
+13	1.7	0.8
+13	2.2	14.2
+13	2.8	29.0
+13	3.5	42.5
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+14	0.0	0.0
+14	0.0	0.1
+14	0.1	0.0
+14	0.2	-0.1
+14	0.5	0.0
+14	0.8	0.0
+14	1.2	0.3
+14	1.7	6.0
+14	2.2	13.1
+14	2.8	20.3
+14	3.5	26.6
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+15	0.0	0.4
+15	0.0	0.0
+15	0.1	0.3
+15	0.2	0.0
+15	0.5	0.3
+15	0.8	0.6
+15	1.2	0.1
+15	1.7	0.4
+15	2.2	8.7
+15	2.8	35.4
+15	3.5	59.8
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+16	0.0	0.5
+16	0.0	0.1
+16	0.1	-0.3
+16	0.3	-0.1
+16	0.5	0.0
+16	0.8	0.0
+16	1.2	0.3
+16	1.7	0.4
+16	2.2	1.2
+16	2.8	0.5
+16	3.5	0.8
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+17	0.0	0.2
+17	0.0	0.2
+17	0.1	-0.1
+17	0.3	-0.2
+17	0.5	0.1
+17	0.8	0.4
+17	1.2	0.2
+17	1.7	4.1
+17	2.2	18.2
+17	2.8	32.8
+17	3.5	45.6
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+18	0.0	0.1
+18	0.0	-0.2
+18	0.1	-0.1
+18	0.3	-0.5
+18	0.5	0.1
+18	0.8	0.0
+18	1.2	0.1
+18	1.7	-0.8
+18	2.2	0.0
+18	2.8	0.7
+18	3.5	15.5
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+19	0.0	0.0
+19	0.0	-0.1
+19	0.1	-0.1
+19	0.3	-0.5
+19	0.5	-0.1
+19	0.8	0.0
+19	1.2	0.5
+19	1.7	0.1
+19	2.2	10.8
+19	2.8	27.0
+19	3.5	42.1
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+20	0.0	0.2
+20	0.0	0.0
+20	0.1	-0.3
+20	0.2	-0.1
+20	0.5	0.0
+20	0.8	0.2
+20	1.2	0.1
+20	1.7	1.2
+20	2.2	-0.5
+20	2.8	10.0
+20	3.5	27.4
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+21	0.0	0.1
+21	0.0	-0.1
+21	0.1	0.0
+21	0.2	-0.2
+21	0.5	-0.1
+21	0.8	0.0
+21	1.2	9.1
+21	1.7	25.4
+21	2.2	45.0
+21	2.8	65.0
+21	3.5	82.1
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+22	0.0	0.0
+22	0.0	-0.2
+22	0.1	0.1
+22	0.2	6.0
+22	0.5	13.9
+22	0.8	22.7
+22	1.2	32.8
+22	1.7	42.0
+22	2.2	48.9
+22	2.8	52.1
+22	3.5	53.7
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+23	0.0	0.0
+23	0.0	-0.4
+23	0.1	-0.1
+23	0.2	-0.4
+23	0.5	-0.5
+23	0.8	-0.2
+23	1.2	-0.2
+23	1.7	-0.1
+23	2.2	0.0
+23	2.8	0.4
+23	3.5	0.2
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+24	0.0	0.1
+24	0.0	0.2
+24	0.1	0.1
+24	0.2	-0.1
+24	0.5	0.2
+24	0.8	0.1
+24	1.2	0.0
+24	1.7	1.0
+24	2.2	-0.2
+24	2.8	0.6
+24	3.5	12.3
+Tensile Data Report Version: 1.0
+Source File: C:\Users\USER\Documents\2019\Malebogo\Extension_Dry_2000mmmin_S.uvc
+Record	% Strain	MPa	
+25	0.0	0.4
+25	0.0	0.3
+25	0.1	0.0
+25	0.3	-0.2
+25	0.5	0.1
+25	0.8	0.4
+25	1.2	8.2
+25	1.7	20.9
+25	2.2	35.6
+25	2.8	49.9
+25	3.5	60.1
